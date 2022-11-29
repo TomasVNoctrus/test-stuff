@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Reg View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Login_RegViewController" customModule="_Balance_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="7M5-lV-i95">
+                                <rect key="frame" x="35" y="127" width="320" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7M5-lV-i95" secondAttribute="height" multiplier="160:103" id="4Xo-Wo-Yx4"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gEL-yd-loW">
+                                <rect key="frame" x="24" y="385" width="342" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gEL-yd-loW" secondAttribute="height" multiplier="342:31" id="htr-Ds-QLD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Login"/>
+                                    <segment title="Register"/>
+                                </segments>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M9p-bT-Egu">
+                                <rect key="frame" x="24" y="440" width="342" height="346"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5e-bm-M0j">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="346"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gEL-yd-loW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="CeE-D8-2vR"/>
+                            <constraint firstItem="M9p-bT-Egu" firstAttribute="top" secondItem="gEL-yd-loW" secondAttribute="bottom" constant="24" id="N48-gJ-LX5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7M5-lV-i95" secondAttribute="trailing" multiplier="1:1" constant="35" id="Rqe-6n-W9R"/>
+                            <constraint firstItem="7M5-lV-i95" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" multiplier="1:1" constant="35" id="VcZ-Ew-rUg"/>
+                            <constraint firstItem="7M5-lV-i95" firstAttribute="topMargin" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="YWe-ku-nEG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gEL-yd-loW" secondAttribute="trailing" constant="24" id="Z2F-fv-b8T"/>
+                            <constraint firstItem="M9p-bT-Egu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="bfB-MR-uGp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M9p-bT-Egu" secondAttribute="bottom" constant="24" id="hkc-ek-24b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M9p-bT-Egu" secondAttribute="trailing" constant="24" id="pan-z2-ze9"/>
+                            <constraint firstItem="gEL-yd-loW" firstAttribute="top" secondItem="7M5-lV-i95" secondAttribute="bottom" multiplier="1:1" constant="52" id="vqd-h3-ZyF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="8bC-Xf-vdC" id="Hpb-b9-oZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="273" height="206"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
