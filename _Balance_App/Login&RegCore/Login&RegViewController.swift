@@ -16,6 +16,16 @@ class Login_RegViewController: UIViewController {
     
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var passwordRepeatTextField: UITextField!
+    
+    
+    @IBOutlet weak var okButton: UIButton!
+    
     var currentState: State = .login
     
     
