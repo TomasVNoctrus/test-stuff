@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-f6-HbB">
-                                <rect key="frame" x="35" y="127" width="320" height="206"/>
+                                <rect key="frame" x="35" y="126" width="320" height="206"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Uh-bvJ">
-                                <rect key="frame" x="35" y="368" width="320" height="51"/>
+                                <rect key="frame" x="35" y="367" width="320" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RNy-cW-QxP"/>
                                 </constraints>
@@ -31,7 +31,7 @@
                                 </segments>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Jj-srD">
-                                <rect key="frame" x="35" y="453" width="320" height="196"/>
+                                <rect key="frame" x="35" y="452" width="320" height="196"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="El9-iT-b5Y">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="dp8-Jj-srD" secondAttribute="trailing" constant="35" id="2fJ-4b-CO4"/>
                             <constraint firstItem="hhr-Uh-bvJ" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="304-kb-BBI"/>
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="hhr-Uh-bvJ" secondAttribute="trailing" constant="35" id="5w1-v6-JL7"/>
-                            <constraint firstItem="Eeo-f6-HbB" firstAttribute="top" secondItem="5Qg-hS-xKQ" secondAttribute="top" constant="80" id="8Ne-Mh-CgW"/>
+                            <constraint firstItem="Eeo-f6-HbB" firstAttribute="top" secondItem="5Qg-hS-xKQ" secondAttribute="top" constant="79" id="8Ne-Mh-CgW"/>
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="Eeo-f6-HbB" secondAttribute="trailing" constant="35" id="9ns-Ei-4MZ"/>
                             <constraint firstItem="dp8-Jj-srD" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="Riw-nb-MHH"/>
                             <constraint firstItem="Eeo-f6-HbB" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="lVi-HN-9GF"/>
