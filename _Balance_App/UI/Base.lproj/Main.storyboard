@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-f6-HbB">
-                                <rect key="frame" x="35" y="126" width="320" height="206"/>
+                                <rect key="frame" x="35" y="97" width="320" height="206"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Uh-bvJ">
-                                <rect key="frame" x="35" y="367" width="320" height="51"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Uh-bvJ">
+                                <rect key="frame" x="35" y="353" width="320" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RNy-cW-QxP"/>
                                 </constraints>
@@ -30,8 +30,8 @@
                                     <segment title="Register"/>
                                 </segments>
                             </segmentedControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Jj-srD">
-                                <rect key="frame" x="35" y="452" width="320" height="196"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Jj-srD">
+                                <rect key="frame" x="35" y="441" width="320" height="205"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="El9-iT-b5Y">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -42,7 +42,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yQ-mF-w4y">
-                                        <rect key="frame" x="0.0" y="52" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="55" width="320" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="M4U-m0-4Sr"/>
                                         </constraints>
@@ -50,7 +50,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Your Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-XN-5bu">
-                                        <rect key="frame" x="0.0" y="104" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="110" width="320" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Toe-GW-Edz"/>
                                         </constraints>
@@ -58,12 +58,18 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJk-ms-Z6t">
-                                        <rect key="frame" x="0.0" y="156" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="165" width="320" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4gx-jQ-Ey5"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="OK">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -74,12 +80,12 @@
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="dp8-Jj-srD" secondAttribute="trailing" constant="35" id="2fJ-4b-CO4"/>
                             <constraint firstItem="hhr-Uh-bvJ" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="304-kb-BBI"/>
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="hhr-Uh-bvJ" secondAttribute="trailing" constant="35" id="5w1-v6-JL7"/>
-                            <constraint firstItem="Eeo-f6-HbB" firstAttribute="top" secondItem="5Qg-hS-xKQ" secondAttribute="top" constant="79" id="8Ne-Mh-CgW"/>
+                            <constraint firstItem="Eeo-f6-HbB" firstAttribute="top" secondItem="5Qg-hS-xKQ" secondAttribute="top" constant="50" id="8Ne-Mh-CgW"/>
                             <constraint firstItem="5Qg-hS-xKQ" firstAttribute="trailing" secondItem="Eeo-f6-HbB" secondAttribute="trailing" constant="35" id="9ns-Ei-4MZ"/>
                             <constraint firstItem="dp8-Jj-srD" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="Riw-nb-MHH"/>
                             <constraint firstItem="Eeo-f6-HbB" firstAttribute="leading" secondItem="5Qg-hS-xKQ" secondAttribute="leading" constant="35" id="lVi-HN-9GF"/>
-                            <constraint firstItem="dp8-Jj-srD" firstAttribute="top" secondItem="hhr-Uh-bvJ" secondAttribute="bottom" constant="35" id="mGH-kN-pmL"/>
-                            <constraint firstItem="hhr-Uh-bvJ" firstAttribute="top" secondItem="Eeo-f6-HbB" secondAttribute="bottom" constant="35" id="x0n-Tq-TxR"/>
+                            <constraint firstItem="dp8-Jj-srD" firstAttribute="top" secondItem="hhr-Uh-bvJ" secondAttribute="bottom" constant="38" id="mGH-kN-pmL"/>
+                            <constraint firstItem="hhr-Uh-bvJ" firstAttribute="top" secondItem="Eeo-f6-HbB" secondAttribute="bottom" constant="50" id="x0n-Tq-TxR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -92,6 +98,9 @@
         <image name="Image" width="273" height="206"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
