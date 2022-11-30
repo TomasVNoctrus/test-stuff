@@ -13,18 +13,12 @@ class Login_RegViewController: UIViewController {
         case login
         case register
     }
-    
 
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    
+    @IBOutlet weak var loginRegisterSegment: UISegmentedControl!
     @IBOutlet weak var usernameTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var passwordRepeatTextField: UITextField!
-    
-    
-    @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var repeatPasswordTextField: UITextField!
+    @IBOutlet weak var oKButton: UIButton!
     
     var currentState: State = .login
     
@@ -36,9 +30,9 @@ class Login_RegViewController: UIViewController {
     
     
     @IBAction func onSegmentChange(_ sender: Any) {
-        if segmentedControl.selectedSegmentIndex == 0 {
+        if loginRegisterSegment.selectedSegmentIndex == 0 {
             currentState = .login
-        } else if segmentedControl.selectedSegmentIndex == 1 {
+        } else if loginRegisterSegment.selectedSegmentIndex == 1 {
             currentState = .register
         }
         

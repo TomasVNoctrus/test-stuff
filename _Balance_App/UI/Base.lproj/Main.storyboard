@@ -88,6 +88,14 @@
                             <constraint firstItem="hhr-Uh-bvJ" firstAttribute="top" secondItem="Eeo-f6-HbB" secondAttribute="bottom" constant="50" id="x0n-Tq-TxR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginRegisterSegment" destination="jLs-KP-K3Y" id="0bs-iH-fZQ"/>
+                        <outlet property="oKButton" destination="dp8-Jj-srD" id="kyd-gv-3bS"/>
+                        <outlet property="passwordTextField" destination="dp8-Jj-srD" id="bYI-PN-Vxf"/>
+                        <outlet property="passwordTextfield" destination="dp8-Jj-srD" id="K5e-W2-HVT"/>
+                        <outlet property="repeatPasswordTextField" destination="dp8-Jj-srD" id="oZf-oT-nlq"/>
+                        <outlet property="usernameTextField" destination="dp8-Jj-srD" id="Qm2-DY-b82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-GV-XcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
