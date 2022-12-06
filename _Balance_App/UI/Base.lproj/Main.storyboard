@@ -95,11 +95,28 @@
                         <outlet property="passwordTextfield" destination="dp8-Jj-srD" id="K5e-W2-HVT"/>
                         <outlet property="repeatPasswordTextField" destination="dp8-Jj-srD" id="oZf-oT-nlq"/>
                         <outlet property="usernameTextField" destination="dp8-Jj-srD" id="Qm2-DY-b82"/>
+                        <segue destination="ivz-CP-BpY" kind="show" identifier="UserRoom" id="iXK-CW-qJ9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-GV-XcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180" y="6"/>
+        </scene>
+        <!--User Room View Controller-->
+        <scene sceneID="7nn-27-fyY">
+            <objects>
+                <viewController id="ivz-CP-BpY" customClass="UserRoomViewController" customModule="_Balance_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFI-Mp-qcO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ssz-na-1mk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q63-7i-gq1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMJ-x5-oFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="6"/>
         </scene>
     </scenes>
     <resources>
