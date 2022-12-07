@@ -21,7 +21,7 @@
                                 <rect key="frame" x="35" y="141" width="320" height="206"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Jj-srD">
-                                <rect key="frame" x="35" y="485" width="320" height="205"/>
+                                <rect key="frame" x="35" y="485" width="320" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="El9-iT-b5Y">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -37,18 +37,18 @@
                                             <constraint firstAttribute="height" constant="40" id="M4U-m0-4Sr"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Your Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-XN-5bu">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="40"/>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Your Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-XN-5bu">
+                                        <rect key="frame" x="0.0" y="102.66666666666663" width="320" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Toe-GW-Edz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJk-ms-Z6t">
-                                        <rect key="frame" x="0.0" y="165" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="110" width="320" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="4gx-jQ-Ey5"/>
                                         </constraints>

@@ -12,6 +12,7 @@ class UserRoomViewController: UIViewController {
     
     @IBOutlet weak var userInfotextView: UILabel!
     var user: User!
+    var userbalancei: UserBalance!
     //var userName
     
     override func viewDidLoad() {
@@ -20,8 +21,7 @@ class UserRoomViewController: UIViewController {
         // Do any additional setup after loading the view.
          
         navigationItem.hidesBackButton = true
-        userInfotextView.text = "Hello, \(user.username)" + "\n"
-                                    + "Your Balance today is "
+        userInfotextView.text = "Hello, \(user.username), Your Balance today is:  0.00"  //\(userbalancei.userbalance)
 
         
     }

@@ -10,10 +10,10 @@ import Foundation
 class UserBalance {
     
     var userbalance: String
-    let date: String
+    let date: Date
     let username: String
     
-    init(userbalance: String, date: String, username: String) {
+    init(userbalance: String, date: Date, username: String) {
         self.userbalance = userbalance
         self.date = date
         self.username = username

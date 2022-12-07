@@ -9,17 +9,17 @@ import Foundation
 
 //userio tapatybes input output suspaustas objektas
 struct UserResult {
-    let user: User?           // userio data info
+    let user: User?               // userio data info
     let balance: UserBalance?     // userio balanco info
-    let errorTitle: String?   // kazkur kitur grazina errorTiltle kintamaji
-    let errorMessage: String? // kazkur kitur grazina errorMessage kintamaji
+    let errorTitle: String?       // kitur grazina errorTiltle kintamaji
+    let errorMessage: String?     // grazina errorMessage kintamaji
 }
 
                               //Userio valdymo klase ir jos funkcijos
 class UserManager {
-                              //useriu arejus
-    var userList: [User] = []
-   
+                              
+    var userList: [User] = []            //useriu arejus
+    var userBalance: [UserBalance] = []  //balanso arejus pagal usery
     
     
     //registravimo modulis
@@ -48,10 +48,14 @@ class UserManager {
         //uzregistruoja usesi
         userList.append(user)
         
+        //pagal usery issaugo jo balansa tik uzsiregistravus dabartinei datai
+        let userbalancE = UserBalance(userbalance: "0.00", date: .now, username: username)
+        //uzpildo userio pradiny balansa nuliais
+        userBalance.append(userbalancE)
         
         
-        //po patikros ir registracijos grazina sio userio rezultata i bendro tipo nocification, loginregview kontroleris siuos duomenis jau siuncia i asmeniny userio langa
-        return UserResult(user: user, balance: nil, errorTitle: nil, errorMessage: nil)
+        //po patikros ir registracijos grazina sio userio rezultata i bendro tipo nocification(struct), LoginRegView kontroleris siuos duomenis kartu grazina i bendra data fielda, kad juos galetu pasiimti sekantis kontroleris
+        return UserResult(user: user, balance: userbalancE, errorTitle: nil, errorMessage: nil)
     }
     
     
