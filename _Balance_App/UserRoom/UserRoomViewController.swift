@@ -8,7 +8,11 @@
 import UIKit
 
 class UserRoomViewController: UIViewController {
-
+    
+    
+    var user: User!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */; };
 		D5AC84D229366FE6005A4DB7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AC84D129366FE6005A4DB7 /* UserManager.swift */; };
-		D5AC84D42936707F005A4DB7 /* Login_RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AC84D32936707F005A4DB7 /* Login_RegViewController.swift */; };
 		D5B2F28D293E58DE009FFDFD /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28C293E58DE009FFDFD /* UserClass.swift */; };
 		D5B2F28F293E6E78009FFDFD /* UserRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28E293E6E78009FFDFD /* UserRoomManager.swift */; };
 		D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegViewController.swift; sourceTree = "<group>"; };
 		D5AC84D129366FE6005A4DB7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		D5AC84D32936707F005A4DB7 /* Login_RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_RegViewController.swift; sourceTree = "<group>"; };
 		D5B2F28C293E58DE009FFDFD /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		D5B2F28E293E6E78009FFDFD /* UserRoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoomManager.swift; sourceTree = "<group>"; };
 		D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoomViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		D5AC84CB29366695005A4DB7 /* Login&RegCore */ = {
 			isa = PBXGroup;
 			children = (
-				D5AC84D32936707F005A4DB7 /* Login_RegViewController.swift */,
+				D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */,
 			);
 			path = "Login&RegCore";
 			sourceTree = "<group>";
@@ -185,13 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */,
 				D5B2F28D293E58DE009FFDFD /* UserClass.swift in Sources */,
 				D5B2F296293E76C6009FFDFD /* UserBalance.swift in Sources */,
 				D5FEFA3729352C2C00A7542A /* AppDelegate.swift in Sources */,
 				D5FEFA3929352C2C00A7542A /* SceneDelegate.swift in Sources */,
 				D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */,
 				D5AC84D229366FE6005A4DB7 /* UserManager.swift in Sources */,
-				D5AC84D42936707F005A4DB7 /* Login_RegViewController.swift in Sources */,
 				D5B2F28F293E6E78009FFDFD /* UserRoomManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

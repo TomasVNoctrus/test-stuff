@@ -9,27 +9,30 @@ import Foundation
 
 //userio input output suspaustas objektas
 struct UserResult {
-    let user: User?                 //kartu pasiima objekto kopija, bet ir grazina nauja info i sy objekta
-    let errorTitle: String?
-    let errorMessage: String?
+    let user: User?                 //data inputu info
+    let errorTitle: String?  //kazkur kitur grazina errorTiltle kintamaji
+    let errorMessage: String? //kazkur kitur grazina errorMessage kintamaji
 }
 
+//Userio valdymo klase ir jos funkcijos
 class UserManager {
     //useriu arejus
     var userList: [User] = []
     
+    
+    
     //registravimo modulis
-    func register(username: String, password: String, confirmPassword: String) -> UserResult {
+    func register(username: String, password: String, repeatPassword: String) -> UserResult {
         let registerErrorTitle = "Error creating user"
         
         
         //ar tusti langai
-        guard !username.isEmpty, !password.isEmpty
+        guard !username.isEmpty, !password.isEmpty, !repeatPassword.isEmpty
         else {
             return UserResult(user: nil, errorTitle: registerErrorTitle, errorMessage: "User name and password cannot be empty")
         }
         //ar slaptazodis yra tikrai toks koks suvestas
-        if password != confirmPassword {
+        if password != repeatPassword {
             return UserResult(user: nil, errorTitle: registerErrorTitle, errorMessage: "Passwords do not match")
         }
         //ar vartotojas jau egzistuoja
