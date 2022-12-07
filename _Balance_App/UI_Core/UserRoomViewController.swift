@@ -10,18 +10,27 @@ import UIKit
 class UserRoomViewController: UIViewController {
     
     
+    @IBOutlet weak var userInfotextView: UILabel!
     var user: User!
-    
+    //var userName
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+         
         navigationItem.hidesBackButton = true
+        userInfotextView.text = "Hello, \(user.username)" + "\n"
+                                    + "Your Balance today is "
+
         
     }
 
-
+    //MARK: - Actions
+   
+        
+   
+    
     /*
     // MARK: - Navigation
 

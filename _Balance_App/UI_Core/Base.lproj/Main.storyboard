@@ -20,19 +20,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-f6-HbB">
                                 <rect key="frame" x="35" y="141" width="320" height="206"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Uh-bvJ">
-                                <rect key="frame" x="35" y="397" width="320" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RNy-cW-QxP"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Login"/>
-                                    <segment title="Register"/>
-                                </segments>
-                                <connections>
-                                    <action selector="onSegmentChange:" destination="RiF-Zt-UoP" eventType="valueChanged" id="oBU-wm-v4e"/>
-                                </connections>
-                            </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dp8-Jj-srD">
                                 <rect key="frame" x="35" y="485" width="320" height="205"/>
                                 <subviews>
@@ -79,6 +66,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Uh-bvJ">
+                                <rect key="frame" x="35" y="397" width="320" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RNy-cW-QxP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Login"/>
+                                    <segment title="Register"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSegmentChange:" destination="RiF-Zt-UoP" eventType="valueChanged" id="oBU-wm-v4e"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Qg-hS-xKQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-GV-XcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109.2307692307691" y="5.6872037914691944"/>
+            <point key="canvasLocation" x="2131" y="6"/>
         </scene>
         <!--User Room View Controller-->
         <scene sceneID="7nn-27-fyY">
@@ -116,9 +116,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unx-IQ-rbL">
-                                <rect key="frame" x="174" y="218" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unx-IQ-rbL">
+                                <rect key="frame" x="35" y="191" width="320" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="unx-IQ-rbL" secondAttribute="height" multiplier="2:1" id="YZY-Of-LES"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -126,12 +128,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ssz-na-1mk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="unx-IQ-rbL" firstAttribute="top" secondItem="Ssz-na-1mk" secondAttribute="top" constant="100" id="0GZ-Cf-mtC"/>
+                            <constraint firstItem="Ssz-na-1mk" firstAttribute="trailing" secondItem="unx-IQ-rbL" secondAttribute="trailing" constant="35" id="QKL-Zn-IdV"/>
+                            <constraint firstItem="unx-IQ-rbL" firstAttribute="leading" secondItem="Ssz-na-1mk" secondAttribute="leading" constant="35" id="nM7-xX-CZU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I4w-Qh-SqT"/>
+                    <connections>
+                        <outlet property="userInfotextView" destination="unx-IQ-rbL" id="vWb-RJ-5VP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMJ-x5-oFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3129.2307692307691" y="5.6872037914691944"/>
+            <point key="canvasLocation" x="3066" y="6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tsx-TS-zxF">

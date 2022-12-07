@@ -89,8 +89,8 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
         if let errorTitle = userResult.errorTitle, let errorMessage = userResult.errorMessage {  //errorTitle ir errorMessage kartu apsprendzia ifa ?
             showError(title: errorTitle, message: errorMessage)
         } else {
-            if let user = userResult.user {  //ir login(pachekina usery ir siuncia) ir register(priregina ir siuncia) atveju su duomenimis siuncia i userioHomePage
-                userForSegue = user //supucia duomenis i userio kintamaji
+            if let user = userResult.user {  //ir login(pachekina usery ir siuncia jo data toliau), ir register(priregina ir siuncia jo data toliau) siuncia i userioHomePage
+                userForSegue = user //supucia duomenis i issiunciama userio kintamaji
                 performSegue(withIdentifier: "userRoom", sender: nil) //atidaro nauja langa
             }
         }
@@ -105,7 +105,7 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
         self.present(alertController, animated: true)
     }
     
-     /*func getUserRoom() {
+     /*func goToUserRoom() {
         performSegue(withIdentifier: "UserRoom", sender: <#T##Any?#>)
      }*/
     

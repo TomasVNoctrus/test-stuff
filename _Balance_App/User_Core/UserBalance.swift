@@ -7,14 +7,16 @@
 
 import Foundation
 
-class Balance {
-    var balance: Double
-    let date: Date
+class UserBalance {
+    
+    var userbalance: String
+    let date: String
     let username: String
     
-    init(balance: Double, date: Date, username: String) {
-        self.balance = balance
+    init(userbalance: String, date: String, username: String) {
+        self.userbalance = userbalance
         self.date = date
         self.username = username
     }
 }
+

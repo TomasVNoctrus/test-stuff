@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D53EFEE629410424008471BD /* UserTransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53EFEE529410424008471BD /* UserTransactionHistory.swift */; };
 		D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */; };
 		D5AC84D229366FE6005A4DB7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AC84D129366FE6005A4DB7 /* UserManager.swift */; };
-		D5B2F28D293E58DE009FFDFD /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28C293E58DE009FFDFD /* UserClass.swift */; };
-		D5B2F28F293E6E78009FFDFD /* UserRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28E293E6E78009FFDFD /* UserRoomManager.swift */; };
+		D5B2F28D293E58DE009FFDFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28C293E58DE009FFDFD /* User.swift */; };
 		D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */; };
 		D5B2F296293E76C6009FFDFD /* UserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F295293E76C6009FFDFD /* UserBalance.swift */; };
 		D5FEFA3729352C2C00A7542A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FEFA3629352C2C00A7542A /* AppDelegate.swift */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D53EFEE529410424008471BD /* UserTransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTransactionHistory.swift; sourceTree = "<group>"; };
 		D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegViewController.swift; sourceTree = "<group>"; };
 		D5AC84D129366FE6005A4DB7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		D5B2F28C293E58DE009FFDFD /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
-		D5B2F28E293E6E78009FFDFD /* UserRoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoomManager.swift; sourceTree = "<group>"; };
+		D5B2F28C293E58DE009FFDFD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoomViewController.swift; sourceTree = "<group>"; };
 		D5B2F295293E76C6009FFDFD /* UserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalance.swift; sourceTree = "<group>"; };
 		D5FEFA3329352C2C00A7542A /* _Balance_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Balance_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,31 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5AC84CB29366695005A4DB7 /* Login&RegCore */ = {
-			isa = PBXGroup;
-			children = (
-				D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */,
-			);
-			path = "Login&RegCore";
-			sourceTree = "<group>";
-		};
-		D5AC84CD29366824005A4DB7 /* UserCore */ = {
+		D5AC84CD29366824005A4DB7 /* User_Core */ = {
 			isa = PBXGroup;
 			children = (
 				D5AC84D129366FE6005A4DB7 /* UserManager.swift */,
-				D5B2F28C293E58DE009FFDFD /* UserClass.swift */,
+				D5B2F28C293E58DE009FFDFD /* User.swift */,
 				D5B2F295293E76C6009FFDFD /* UserBalance.swift */,
+				D53EFEE529410424008471BD /* UserTransactionHistory.swift */,
 			);
-			path = UserCore;
-			sourceTree = "<group>";
-		};
-		D5AC84CE2936694B005A4DB7 /* UserRoom */ = {
-			isa = PBXGroup;
-			children = (
-				D5B2F28E293E6E78009FFDFD /* UserRoomManager.swift */,
-				D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */,
-			);
-			path = UserRoom;
+			path = User_Core;
 			sourceTree = "<group>";
 		};
 		D5FEFA2A29352C2C00A7542A = {
@@ -93,10 +77,8 @@
 		D5FEFA3529352C2C00A7542A /* _Balance_App */ = {
 			isa = PBXGroup;
 			children = (
-				D5AC84CE2936694B005A4DB7 /* UserRoom */,
-				D5AC84CD29366824005A4DB7 /* UserCore */,
-				D5AC84CB29366695005A4DB7 /* Login&RegCore */,
-				D5FEFA4A2935304200A7542A /* UI */,
+				D5AC84CD29366824005A4DB7 /* User_Core */,
+				D5FEFA4A2935304200A7542A /* UI_Core */,
 				D5FEFA3629352C2C00A7542A /* AppDelegate.swift */,
 				D5FEFA3829352C2C00A7542A /* SceneDelegate.swift */,
 				D5FEFA3F29352C2F00A7542A /* Assets.xcassets */,
@@ -105,13 +87,15 @@
 			path = _Balance_App;
 			sourceTree = "<group>";
 		};
-		D5FEFA4A2935304200A7542A /* UI */ = {
+		D5FEFA4A2935304200A7542A /* UI_Core */ = {
 			isa = PBXGroup;
 			children = (
 				D5FEFA3C29352C2C00A7542A /* Main.storyboard */,
+				D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */,
+				D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */,
 				D5FEFA4129352C2F00A7542A /* LaunchScreen.storyboard */,
 			);
-			path = UI;
+			path = UI_Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */,
-				D5B2F28D293E58DE009FFDFD /* UserClass.swift in Sources */,
+				D5B2F28D293E58DE009FFDFD /* User.swift in Sources */,
 				D5B2F296293E76C6009FFDFD /* UserBalance.swift in Sources */,
 				D5FEFA3729352C2C00A7542A /* AppDelegate.swift in Sources */,
 				D5FEFA3929352C2C00A7542A /* SceneDelegate.swift in Sources */,
 				D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */,
+				D53EFEE629410424008471BD /* UserTransactionHistory.swift in Sources */,
 				D5AC84D229366FE6005A4DB7 /* UserManager.swift in Sources */,
-				D5B2F28F293E6E78009FFDFD /* UserRoomManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
