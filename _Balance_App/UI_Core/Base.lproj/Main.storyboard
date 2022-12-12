@@ -108,6 +108,51 @@
             </objects>
             <point key="canvasLocation" x="2131" y="6"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FcW-5N-F95">
+            <objects>
+                <viewController id="4ea-k2-67d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yqu-yB-Gz3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z79-t4-2KM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qe-h1-r6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4225" y="-813"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="taD-3B-Ybe">
+            <objects>
+                <viewController id="81q-fN-lqt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TFJ-0o-25k">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BiA-YH-rlp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Lu-Pk-djG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4225" y="6"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zvl-Cz-rWi">
+            <objects>
+                <viewController id="lrz-S0-gpN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pA1-p9-CXx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EH2-h6-QFQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8W-UA-500" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4225" y="827"/>
+        </scene>
         <!--User Room View Controller-->
         <scene sceneID="7nn-27-fyY">
             <objects>
@@ -121,18 +166,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Balance"/>
+                                <connections>
+                                    <action selector="addBalanceButton:" destination="ivz-CP-BpY" eventType="touchUpInside" id="z0e-PU-vWQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAJ-3y-rqH">
                                 <rect key="frame" x="276" y="91" width="79" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="History"/>
+                                <connections>
+                                    <action selector="historyButton:" destination="ivz-CP-BpY" eventType="touchUpInside" id="fDV-Sh-Oes"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THz-LC-95A">
                                 <rect key="frame" x="44" y="640" width="64" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                <connections>
+                                    <action selector="sendButton:" destination="ivz-CP-BpY" eventType="touchUpInside" id="8ko-60-Ebz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unx-IQ-rbL">
                                 <rect key="frame" x="44" y="224" width="320" height="160"/>
