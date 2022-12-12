@@ -10,6 +10,9 @@
 		D53EFEE629410424008471BD /* UserTransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53EFEE529410424008471BD /* UserTransactionHistory.swift */; };
 		D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */; };
 		D5AC84D229366FE6005A4DB7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AC84D129366FE6005A4DB7 /* UserManager.swift */; };
+		D5B1E85A29477BBE00C6EB47 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1E85929477BBE00C6EB47 /* SendViewController.swift */; };
+		D5B1E85C29477BD100C6EB47 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1E85B29477BD100C6EB47 /* AddViewController.swift */; };
+		D5B1E85E29477BE300C6EB47 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1E85D29477BE300C6EB47 /* HistoryViewController.swift */; };
 		D5B2F28D293E58DE009FFDFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F28C293E58DE009FFDFD /* User.swift */; };
 		D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */; };
 		D5B2F296293E76C6009FFDFD /* UserBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2F295293E76C6009FFDFD /* UserBalance.swift */; };
@@ -24,6 +27,9 @@
 		D53EFEE529410424008471BD /* UserTransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTransactionHistory.swift; sourceTree = "<group>"; };
 		D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegViewController.swift; sourceTree = "<group>"; };
 		D5AC84D129366FE6005A4DB7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		D5B1E85929477BBE00C6EB47 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		D5B1E85B29477BD100C6EB47 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		D5B1E85D29477BE300C6EB47 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		D5B2F28C293E58DE009FFDFD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRoomViewController.swift; sourceTree = "<group>"; };
 		D5B2F295293E76C6009FFDFD /* UserBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalance.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 				D5FEFA3C29352C2C00A7542A /* Main.storyboard */,
 				D5A0A1C72940377D00D3CB75 /* LoginRegViewController.swift */,
 				D5B2F291293E6EA7009FFDFD /* UserRoomViewController.swift */,
+				D5B1E85929477BBE00C6EB47 /* SendViewController.swift */,
+				D5B1E85B29477BD100C6EB47 /* AddViewController.swift */,
+				D5B1E85D29477BE300C6EB47 /* HistoryViewController.swift */,
 				D5FEFA4129352C2F00A7542A /* LaunchScreen.storyboard */,
 			);
 			path = UI_Core;
@@ -169,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B1E85C29477BD100C6EB47 /* AddViewController.swift in Sources */,
 				D5A0A1C82940377D00D3CB75 /* LoginRegViewController.swift in Sources */,
 				D5B2F28D293E58DE009FFDFD /* User.swift in Sources */,
+				D5B1E85A29477BBE00C6EB47 /* SendViewController.swift in Sources */,
 				D5B2F296293E76C6009FFDFD /* UserBalance.swift in Sources */,
+				D5B1E85E29477BE300C6EB47 /* HistoryViewController.swift in Sources */,
 				D5FEFA3729352C2C00A7542A /* AppDelegate.swift in Sources */,
 				D5FEFA3929352C2C00A7542A /* SceneDelegate.swift in Sources */,
 				D5B2F293293E6EA7009FFDFD /* UserRoomViewController.swift in Sources */,

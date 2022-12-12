@@ -29,10 +29,13 @@ class UserRoomViewController: UIViewController {
     //MARK: - Actions
    
     @IBAction func sendButton(_ sender: Any) {
+        
     }
     @IBAction func historyButton(_ sender: Any) {
-    }    
+        
+    }
     @IBAction func addBalanceButton(_ sender: Any) {
+        
     }
     
     
