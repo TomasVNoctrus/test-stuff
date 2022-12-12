@@ -21,7 +21,7 @@ class UserRoomViewController: UIViewController {
         // Do any additional setup after loading the view.
          
         navigationItem.hidesBackButton = true
-        userInfotextView.text = "Hello, \(user.username), Your Balance today is:  \(userbalance.userbalance) "
+        userInfotextView.text = "Hello \(user.username), Your Balance today is:  \(userbalance.userbalance) "
 
         
     }
