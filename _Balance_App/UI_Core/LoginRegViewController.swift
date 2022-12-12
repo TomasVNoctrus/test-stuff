@@ -22,12 +22,14 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     @IBOutlet weak var oKButton: UIButton!
     
+    
     // default segmentchange mygtuko eiliskumo kintamasis
     var currentState: State = .login
     //importinam UserManager klase, priskiriam ja vietinei konstantai
     let userManager: UserManager = UserManager()
     //importinam Userio klaseje apsibreztus kintamuosius, po userio logino ar interakcijos siuos kintamuosius uzpildom su duomenimis ir toliau si kintamaji siunciam kartu su perejimu i sekanty langa
     var userForSegue: User!
+    var balanceForSegue: UserBalance!
     
     
     override func viewDidLoad() {    //ka sitas loadina su super visur po defaultu ??
@@ -72,7 +74,6 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
                 password: passwordTextField.text!,
                 repeatPassword: repeatPasswordTextField.text!)
             validateUser(from: result)  //iskviecia privacia userio tikrinimo funkcija ir jai suduoda turimus duomenis po mygtuko paspaudimo
-           
        
         }
     }
@@ -89,8 +90,9 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
         if let errorTitle = userResult.errorTitle, let errorMessage = userResult.errorMessage {  //errorTitle ir errorMessage kartu apsprendzia ifa ?
             showError(title: errorTitle, message: errorMessage)
         } else {
-            if let user = userResult.user {  //ir login(pachekina usery ir siuncia jo data toliau), ir register(priregina ir siuncia jo data toliau) siuncia i userioHomePage
+            if let user = userResult.user, let userBalance = userResult.balance {  //ir login(pachekina usery ir siuncia jo data toliau), ir register(priregina ir siuncia jo data toliau) siuncia i userioHomePage
                 userForSegue = user //supucia duomenis i issiunciama userio kintamaji
+                balanceForSegue = userBalance
                 performSegue(withIdentifier: "userRoom", sender: nil) //atidaro nauja langa
             }
         }
@@ -116,8 +118,12 @@ class LoginRegViewController: UIViewController { //tarsi UIViewController expans
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          if segue.identifier == "userRoom" {
              if let viewController = segue.destination as? UserRoomViewController {
-                 viewController.user = userForSegue  //issivalo savo vietiny kintamaji ir perleidzia duomenis sekanciam langui
+                 //issivalo savo vietiny kintamaji ir perleidzia duomenis sekanciam langui
+                 viewController.user = userForSegue
                  userForSegue = nil
+                 
+                 viewController.userbalance = balanceForSegue
+                 balanceForSegue = nil
              }
          }
      }
